@@ -35,6 +35,9 @@
 .contacts-address-mail:hover {
     fill: var(--accent-color);
    }
+   .contacts-address-phone{
+    fill: var(--main-text-color);
+   }
    .contacts-address-phone:hover {
     fill: var(--accent-color);
    }
