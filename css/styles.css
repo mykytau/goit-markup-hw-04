@@ -10,6 +10,8 @@
     --whatwedo-bcolor: #f5f5f5;
     --team-bcolor: #f5f4fa;
     --hero-color-gradient: rgba(47, 48, 58, 0.4);
+    --color-gray:  #afb1b8; 
+    --footer-second-join: rgba(255, 255, 255, 0.1);
     }
     html {
         box-sizing:border-box;
@@ -25,6 +27,23 @@
    .contacts-address:nth-last-child(-n + 1){
    margin-right: 0;
    }
+   .contacts-address-mail .contacts-address-phone svg{ 
+    fill: currentColor;
+    margin-right: 10px;
+   }
+
+.contacts-address-mail:hover {
+    fill: var(--accent-color);
+   }
+   .contacts-address-phone:hover {
+    fill: var(--accent-color);
+   }
+   /* .adress-envelope:hover,
+.adress-smaerphone:hover{
+    fill: var(--premary-color);
+} */
+
+/* ---------------- */
     .container{
         width: 1200px;
         padding-left: 15px;
@@ -178,16 +197,6 @@ text-decoration: none;
 .hero-color, .text {
     text-align: center;
 }
-.clock::before{
-    flex-basis: 270px;
-    display: block;
-    content: "";
-    height: 70px;
-background-image: url(../images/icons.svg/clock.svg);
-background-size: contain;
-background-repeat: no-repeat;
-
-}
 .hero-color{
     max-width: 1600px;
     height: 600px;
@@ -324,6 +333,8 @@ background-repeat: no-repeat;
     margin: 0;
     margin-bottom: 50px;
 }
+/* COMPANY PREFERENSIES DECOR*/
+
 .company-plus{
     margin-top: 0;
     margin-bottom: 0;
@@ -332,7 +343,18 @@ background-repeat: no-repeat;
     display: flex;
     gap: 30px;
 }
-
+.list-preferences{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    min-height: 120px;
+    background: var(--team-bcolor);
+    border-radius: 4px;
+}
+.list-size{
+        flex-basis: 270px;
+}
 .team-title {
     color:#212121;
     font-family: 'Roboto';
@@ -397,7 +419,75 @@ border-radius: 0px 0px 4px 4px;
     padding:60px 0;
 }
 
+.main-social-link:hover,
+.main-social-link:focus{
+    background: var(--accent-color);
+    color: var(--header-bcolor);
 
+    border-radius: 50%;
+}
+.social-list-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+padding-left: 32px;
+padding-right: 32px;
+}
+.our-clients{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        list-style-type: none;
+        margin-top: 50px;
+        margin-bottom: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+}
+
+.main-social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: var(--color-gray);
+}
+/* Постійні клієнти */
+.clients-pick{
+    color:#212121;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+.clients{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+.logo-client-link{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    fill: var(--color-gray);
+    border: 1px solid var(--color-gray);
+}
+
+.logo-client-link:focus,
+.logo-client-link:hover{
+   fill: var(--accent-color);
+   border: 1px solid var(--accent-color)
+}
+
+.icon-brand,
+.team-social-icon{
+    fill: currentColor;
+}
 
 .map .address-link .address-bottom{
     margin-bottom: 9px;
@@ -486,7 +576,11 @@ border-radius: 0px 0px 4px 4px;
 .bottom-space a{
     text-decoration: none;
 }
-
+.bottom-onetwo{
+        display: flex;
+        align-items: baseline;
+        gap: 70px;
+}
 .address-link {
     color:var(--header-bcolor)
 }
@@ -501,6 +595,45 @@ border-radius: 0px 0px 4px 4px;
 }
 .address-bottom-type:nth-last-child(-n + 1){
     margin-bottom: 0;
+}
+/* Footer join us */
+.follow-title  {
+    color: var(--header-bcolor);
+}
+.follow-title {
+    margin-bottom: 20px;
+}
+.follow-us-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.follow-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.follow-item:hover,
+.follow-item:focus,
+.follow-link:hover,
+.follow-link:focus{
+    background: var(--accent-color);
+    fill: var(--accent-color);
+    border-radius: 50%;
+}
+.title-footer{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
 }
 /* Second maket */
 
